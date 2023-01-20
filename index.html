@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application 2023|HTML|CSS|Javascript</title>
+    <!-- Font awosome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font awosome -->
+    <!-- Google font starts from here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,800;1,900&family=Inter:wght@800&family=Lobster&family=Open+Sans:wght@300;400;500&family=Roboto+Condensed:ital,wght@1,300&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- Google font awosome ends from here -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+     <section class="app__area">
+        <h1>Todo App 2023</h1>
+        <div class="add-task-area">
+            <form id="add-task">
+              <div class="form-group">
+                <input type="text" 
+                placeholder="Your task Name"
+                id="task"
+                />
+               </br>
+                <div id="error-div"></div>
+                <button type="submit">Add Task</button>
+                
+              </div>
+            </form>
+        </div>
+        <div class="task-area">
+            <h2>My Tasl List</h2>
+            <div id="allTask">
+                 <div class="singleTask" id="single">
+                    <input type="text" 
+                    value="My Task one" readonly/>
+                     <button class="edit-Task">
+                        Edit</button>
+                     <button class="complete-task">
+                        Complete</button>
+                     <button class="delete-task">
+                        Delete</button>
+                 </div>
+            </div>
+        </div>
+        </div>
+        
+     </section>
+    <script src="./index.js"></script>
+</body>
+</html>
